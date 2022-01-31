@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:simpl_habits/screens/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,18 +10,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Simpl',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Simpl Habits'),
-          centerTitle: true,
-          elevation: 0.0,
-        ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {},
-          child: const Icon(Icons.add),
-        ),
-      ),
+      title: 'Simpl Habits',
+      home: const HomePage(title: 'Simpl Habits'),
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
