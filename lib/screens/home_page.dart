@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:simpl_habits/constants.dart';
+import 'package:simpl_habits/screens/settings_page.dart';
 
 class HomePage extends StatelessWidget {
   final String title;
@@ -13,6 +14,13 @@ class HomePage extends StatelessWidget {
         centerTitle: true,
         elevation: 0.0,
         backgroundColor: Theme.of(context).primaryColor,
+        actions: [
+          IconButton(
+            onPressed: () {Navigator.of(context)
+                .push(MaterialPageRoute(builder: (context) => const SettingsPage()));},
+            icon: const Icon(Icons.settings),
+          )
+        ],
       ),
       drawer: Drawer(
         child: Container(
