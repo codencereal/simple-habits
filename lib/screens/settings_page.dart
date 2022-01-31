@@ -16,7 +16,7 @@ class SettingsPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () {
             Navigator.of(context)
-                .push(MaterialPageRoute(builder: (context) => const HomePage(title: 'Simpl Habits'))); //TODO: Remove title parameter from homepage
+                .push(MaterialPageRoute(builder: (context) => const HomePage())); //TODO: Remove title parameter from homepage
           },
           icon: const Icon(Icons.arrow_back),
         ),

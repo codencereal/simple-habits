@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:simpl_habits/constants.dart';
 import 'package:simpl_habits/screens/settings_page.dart';
 
 class HomePage extends StatelessWidget {
