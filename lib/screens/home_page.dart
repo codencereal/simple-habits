@@ -1,18 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:simpl_habits/components/my_appbar.dart';
 import 'package:simpl_habits/screens/settings_page.dart';
 
 class HomePage extends StatelessWidget {
-  final String title;
 
-  const HomePage({Key? key, required this.title}) : super(key: key);
+  const HomePage({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(title),
-        centerTitle: true,
-        elevation: 0.0,
-        backgroundColor: Theme.of(context).primaryColor,
+      appBar: MyAppBar(
+        title: const Text('Simpl Habits'),
+        context: context,
         actions: [
           IconButton(
             onPressed: () {Navigator.of(context)

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:simpl_habits/components/my_appbar.dart';
 import 'package:simpl_habits/screens/home_page.dart';
 
 class SettingsPage extends StatelessWidget {
@@ -7,20 +8,17 @@ class SettingsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text(
-            'Settings'), //TODO: Create an appbar widget to extend from
-        centerTitle: true,
-        elevation: 0.0,
-        backgroundColor: Theme.of(context).primaryColor,
+      appBar: MyAppBar(
+        title: const Text('Settings'),
+        context: context,
         leading: IconButton(
           onPressed: () {
             Navigator.of(context)
-                .push(MaterialPageRoute(builder: (context) => const HomePage())); //TODO: Remove title parameter from homepage
+                .push(MaterialPageRoute(builder: (context) => const HomePage()));
           },
           icon: const Icon(Icons.arrow_back),
         ),
-      ),
+      )
     );
   }
 }
