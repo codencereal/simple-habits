@@ -11,9 +11,11 @@ class HomePage extends StatelessWidget {
         title: Text(title),
         centerTitle: true,
         elevation: 0.0,
+        backgroundColor: Theme.of(context).primaryColor
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
+        backgroundColor: Theme.of(context).primaryColor,
         child: const Icon(Icons.add),
       ),
     );

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:simpl_habits/screens/home_page.dart';
+import 'package:simpl_habits/themes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -7,15 +8,15 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
+  
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Simpl Habits',
       home: const HomePage(title: 'Simpl Habits'),
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: lightTheme(),
+      darkTheme: darkTheme(),
     );
   }
 }
