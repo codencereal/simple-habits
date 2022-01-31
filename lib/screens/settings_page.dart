@@ -13,7 +13,7 @@ class SettingsPage extends StatelessWidget {
         context: context,
         leading: IconButton(
           onPressed: () {
-            Navigator.of(context)
+            Navigator.of(context) //TODO: Make this a pop statement instead of push
                 .push(MaterialPageRoute(builder: (context) => const HomePage()));
           },
           icon: const Icon(Icons.arrow_back),
