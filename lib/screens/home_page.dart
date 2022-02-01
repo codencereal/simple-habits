@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:simple_habits/widgets/habit.dart';
 import 'package:simple_habits/widgets/my_appbar.dart';
 import 'package:simple_habits/screens/settings_page.dart';
 
@@ -41,6 +42,15 @@ class HomePage extends StatelessWidget {
               ),
             ),
           ]),
+        ),
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(20.0),
+        child: ListView(
+          children: const [
+            Habit(),
+            Habit(),
+          ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
