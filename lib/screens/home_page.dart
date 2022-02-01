@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:simpl_habits/components/my_appbar.dart';
-import 'package:simpl_habits/screens/settings_page.dart';
+import 'package:simple_habits/components/my_appbar.dart';
+import 'package:simple_habits/screens/settings_page.dart';
 
 class HomePage extends StatelessWidget {
 
@@ -9,7 +9,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: MyAppBar(
-        title: const Text('Simpl Habits'),
+        title: const Text('Simple Habits'),
         context: context,
         actions: [
           IconButton(

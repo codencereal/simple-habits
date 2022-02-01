@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:simpl_habits/screens/home_page.dart';
-import 'package:simpl_habits/themes.dart';
+import 'package:simple_habits/screens/home_page.dart';
+import 'package:simple_habits/themes.dart';
 
 void main() {
   runApp(const MyApp());
