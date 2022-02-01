@@ -4,7 +4,7 @@ import 'constants.dart';
 ThemeData lightTheme() {
   return ThemeData(
     primaryColor: kPrimaryColor,
-    visualDensity: VisualDensity.adaptivePlatformDensity
+    visualDensity: VisualDensity.adaptivePlatformDensity,
   );
 }
 

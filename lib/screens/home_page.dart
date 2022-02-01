@@ -3,7 +3,6 @@ import 'package:simple_habits/components/my_appbar.dart';
 import 'package:simple_habits/screens/settings_page.dart';
 
 class HomePage extends StatelessWidget {
-
   const HomePage({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -13,23 +12,26 @@ class HomePage extends StatelessWidget {
         context: context,
         actions: [
           IconButton(
-            onPressed: () {Navigator.of(context)
-                .push(MaterialPageRoute(builder: (context) => const SettingsPage()));},
+            onPressed: () {
+              Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => const SettingsPage()));
+            },
             icon: const Icon(Icons.settings),
           )
         ],
       ),
       drawer: Drawer(
         child: Container(
-          color: const Color(0xFFA2A2A2), //TODO: Add a better colour to theme and use that colour instead
+          color: const Color(
+              0xFFA2A2A2), //TODO: Add a better colour to theme and use that colour instead
           child: ListView(children: const [
             DrawerHeader(
                 child: Center(
-                  child: Text(
-              'H A B I T S',
-              style: TextStyle(fontSize: 35),
-            ),
-                )),
+              child: Text(
+                'H A B I T S',
+                style: TextStyle(fontSize: 35),
+              ),
+            )),
             ListTile(
               leading: Icon(Icons.home),
               title: Text(
