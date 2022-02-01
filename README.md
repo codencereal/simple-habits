@@ -1,4 +1,4 @@
-# simpl_habits
+# simple_habits
 
 A new Flutter project.
 
