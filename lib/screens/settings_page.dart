@@ -11,14 +11,7 @@ class SettingsPage extends StatelessWidget {
       appBar: MyAppBar(
         title: const Text('Settings'),
         context: context,
-        leading: IconButton(
-          onPressed: () {
-            Navigator.of(context) //TODO: Make this a pop statement instead of push
-                .push(MaterialPageRoute(builder: (context) => const HomePage()));
-          },
-          icon: const Icon(Icons.arrow_back),
-        ),
-      )
+      ),
     );
   }
 }
